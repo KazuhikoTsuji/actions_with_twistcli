@@ -14,6 +14,8 @@ jobs:
       TL_USER: ${{ secrets.TL_USER }}
       TL_PW: ${{ secrets.TL_PW }}
       TL_CONSOLE: ${{ secrets.TL_CONSOLE }}
+      DOCKER_USER: ${{ secrets.DOCKER_USER }}
+      DOCKER_PW: ${{ secrets.DOCKER_PW }}
 
     steps:
     - uses: actions/checkout@v2
@@ -28,6 +30,3 @@ jobs:
       run: |
         echo $DOCKER_PW | docker login --username $DOCKER_USER --password-stdin docker.io
         docker push docker.io/$MYREPO/$MYIMAGE:$TAG
-      env:
-        DOCKER_USER: ${{ secrets.DOCKER_USER }}
-        DOCKER_PW: ${{ secrets.DOCKER_PW }}
