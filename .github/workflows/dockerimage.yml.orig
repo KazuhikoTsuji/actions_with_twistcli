@@ -28,13 +28,3 @@ jobs:
         MYREPO: ${{ secrets.MYREPO }}      
         MYIMAGE: ${{ secrets.MYIMAGE }}
         TAG: ${{ secrets.TAG }}
-    - name: Push the Docker image
-      run: |
-        echo $DOCKER_PW | docker login --username $DOCKER_USER --password-stdin docker.io
-        docker push docker.io/$MYREPO/$MYIMAGE:$TAG
-      env:
-        DOCKER_USER: ${{ secrets.DOCKER_USER }}
-        DOCKER_PW: ${{ secrets.DOCKER_PW }}
-        MYREPO: ${{ secrets.MYREPO }}
-        MYIMAGE: ${{ secrets.MYIMAGE }}
-        TAG: ${{ secrets.TAG }}
