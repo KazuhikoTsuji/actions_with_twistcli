@@ -8,7 +8,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      TAG: 01
+      TAG: '02'
       MYREPO: ${{ secrets.MYREPO }} 
       MYIMAGE: ${{ secrets.MYIMAGE }}
       TL_USER: ${{ secrets.TL_USER }}
