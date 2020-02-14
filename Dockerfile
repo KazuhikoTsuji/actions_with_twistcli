@@ -1,3 +1,3 @@
-FROM nginx:1.17.1
+FROM nginx:1.17.2
 LABEL MAINTAINER Macnica Solutions Corp.
 ADD index.html /usr/share/nginx/html/
