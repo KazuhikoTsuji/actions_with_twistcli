@@ -1,4 +1,3 @@
 FROM nginxinc/nginx-unprivileged:1.17.8
 LABEL MAINTAINER Macnica Solutions Corp.
-RUN apt-get update -y && apt-get upgrade -y
 ADD index.html /usr/share/nginx/html/
