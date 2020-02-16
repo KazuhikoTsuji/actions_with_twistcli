@@ -26,7 +26,7 @@ jobs:
           -address $TL_CONSOLE \
           -u $TL_USER \
           -p $TL_PW \
-          --vulnerability-threshold high \
+          --vulnerability-threshold critical \
           --compliance-threshold critical \
           $MYREPO/$MYIMAGE:$TAG
     - name: Push the Docker image
