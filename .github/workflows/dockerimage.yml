@@ -1,11 +1,7 @@
 name: Docker Image CI
-
 on: [push]
-
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
     env:
       TAG: '01'
