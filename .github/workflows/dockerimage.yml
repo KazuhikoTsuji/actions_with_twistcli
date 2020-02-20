@@ -2,7 +2,7 @@ name: Docker Image CI
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: centos-latest
     env:
       TAG: '01'
       MYREPO: ${{ secrets.MYREPO }} 
