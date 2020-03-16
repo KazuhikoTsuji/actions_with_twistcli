@@ -8,8 +8,8 @@ jobs:
       MYREPO: ${{ secrets.MYREPO }} 
       MYIMAGE: ${{ secrets.MYIMAGE }}
       TL_USER: ${{ secrets.TL_USER }}
-      TL_PW: ${{ secrets.TL_PW }}
-      TL_CONSOLE: ${{ secrets.TL_CONSOLE }}
+      TL_PW: ${{ secrets.TL_PASS }}
+      TL_CONSOLE: ${{ secrets.TL_CONSOLE_URL }}
       DOCKER_USER: ${{ secrets.DOCKER_USER }}
       DOCKER_PW: ${{ secrets.DOCKER_PW }}
 
